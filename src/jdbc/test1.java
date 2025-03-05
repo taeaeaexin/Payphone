@@ -2,6 +2,7 @@ package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 //Statement 사용
@@ -23,6 +24,9 @@ public class test1 {
         //Statement (sql 전달 객체)
         Statement stmt = con.createStatement();
 
+        //ResultSet (select query의 결과)
+        ResultSet rs = null;
+
         //insert
         //dup 확인
 //        {
@@ -39,12 +43,38 @@ public class test1 {
 //        }
 
         //delete
-        {
-            String deleteSql = "delete from customer where custid = 6; ";
-            int ret = stmt.executeUpdate(deleteSql);
-            System.out.println(ret);
-        }
+//        {
+//            String deleteSql = "delete from customer where custid = 6; ";
+//            int ret = stmt.executeUpdate(deleteSql);
+//            System.out.println(ret);
+//        }
 
+        //select list (복수 건)
+//        {
+//            String selectSql = "select * from customer; ";
+//            String selectSql = "select custid, name, address, phone from customer; ";
+//            rs = stmt.executeQuery(selectSql);
+//            while(rs.next()) { //row 이동
+//                //해당 row에서 필요한 column 획득 <- rs.getInt(), rs.getString() (괄호안에 인덱스(숫자)도 사용 가능하지만, 일반적으로 컬럼명 사용)
+//                System.out.println(rs.getInt("custid") + " | " + rs.getString("name") + " | " + rs.getString("address") + " | " + rs.getString("phone"));
+//            }
+//        }
+
+        //select one (단수 건)
+//        {
+//            String selectSql = "select * from customer where custid = 4 ; ";
+////            String selectSql = "select custid, name, address, phone from customer where custid = 4; ";
+////            String selectSql = "select custid, name cuse_name, address cust_address, phone cust_phone from customer where custid = 4; "; //alias
+//            rs = stmt.executeQuery(selectSql);
+//            while(rs.next()) { //1건에 대해 있고 없고
+//                //해당 row에서 필요한 column 획득 <- rs.getInt(), rs.getString() (괄호안에 인덱스(숫자)도 사용 가능하지만, 일반적으로 컬럼명 사용)
+//                System.out.println(rs.getInt("custid") + " | " + rs.getString("name") + " | " + rs.getString("address") + " | " + rs.getString("phone"));
+////                System.out.println(rs.getInt("custid") + " | " + rs.getString("name") + " | " + rs.getString("address") + " | " + rs.getString("phone"));
+//            }
+//        }
+
+        if(rs==null) rs.close();
+        stmt.close();
         con.close();
     }
 }

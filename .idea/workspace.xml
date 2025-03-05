@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b69a48e0-68f7-4458-b9ac-c7afe5ed0e3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/DBManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/book/AddBookDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/book/BookManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/book/CustomerOrderManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/book/EditBookDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc/test1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +51,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BookManager.executor": "Run",
+    "Application.CustomerOrderManager.executor": "Run",
     "Application.test1.executor": "Run",
     "Application.test2.executor": "Run",
     "Application.test3.executor": "Run",
@@ -75,6 +74,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive\바탕 화면\GitHub\MiniProject1_day1\src\app" />
+      <recent name="D:\OneDrive\바탕 화면\GitHub\MiniProject1_day1\src\jdbc\swing\book" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="jdbc" />
     </key>
@@ -95,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741140645134</updated>
-      <workItem from="1741140646234" duration="9172000" />
+      <workItem from="1741140646234" duration="13128000" />
     </task>
     <servers />
   </component>

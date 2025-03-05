@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b69a48e0-68f7-4458-b9ac-c7afe5ed0e3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/book/AddBookDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/book/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/book/CustomerOrderManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/book/EditBookDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/payphone/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/payphone/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/payphone/dao/PhoneDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/payphone/dto/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book/BookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/book/BookManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,21 +30,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "taeaeaexin"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;taeaeaexin&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/taeaeaexin/Payphone.git",
-    "accountId": "f4acb023-1168-45d1-8c6f-8d170fea1787"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/taeaeaexin/Payphone.git&quot;,
+    &quot;accountId&quot;: &quot;f4acb023-1168-45d1-8c6f-8d170fea1787&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2tsVCpIU7VdWcdOxj1juNtFx9p7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,6 +57,8 @@
   "keyToString": {
     "Application.BookManager.executor": "Run",
     "Application.CustomerOrderManager.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.RegisterUI.executor": "Run",
     "Application.test1.executor": "Run",
     "Application.test2.executor": "Run",
     "Application.test3.executor": "Run",
@@ -61,7 +67,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive/바탕 화면/GitHub",
+    "last_opened_file_path": "D:/OneDrive/바탕 화면/GitHub/Payphone",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741140645134</updated>
       <workItem from="1741140646234" duration="13128000" />
+      <workItem from="1741159164980" duration="6330000" />
     </task>
     <servers />
   </component>

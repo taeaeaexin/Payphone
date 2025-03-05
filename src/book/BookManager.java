@@ -75,7 +75,5 @@ public class BookManager extends JFrame {
 		SwingUtilities.invokeLater( () -> {
 			new BookManager().setVisible(true);
 		});
-		
 	}
-
 }

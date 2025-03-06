@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b69a48e0-68f7-4458-b9ac-c7afe5ed0e3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/Play.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/EventDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/PlayerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/book/common/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/common/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/book/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/dao/PhoneDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/book/dto/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/dto/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/book/ui/AddBookDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/ui/AddPhoneDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/book/ui/BookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/ui/PhoneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/book/ui/EditBookDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/ui/EditPhoneDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payphone/DBManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payphone/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payphone/dao/PhoneDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payphone/dto/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book/AddBookDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book/BookManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book/CustomerOrderManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book/EditBookDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/CustomerDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/DBManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/test4.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +68,9 @@
     "Application.BookManager.executor": "Run",
     "Application.CustomerOrderManager.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.PayPhone2.executor": "Run",
     "Application.PhoneManager.executor": "Run",
+    "Application.Play.executor": "Run",
     "Application.RegisterUI.executor": "Run",
     "Application.test1.executor": "Run",
     "Application.test2.executor": "Run",
@@ -87,7 +97,11 @@
       <recent name="D:\OneDrive\바탕 화면\GitHub\MiniProject1_day1\src\app" />
       <recent name="D:\OneDrive\바탕 화면\GitHub\MiniProject1_day1\src\jdbc\swing\book" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.PayPhone2.data" />
       <recent name="jdbc" />
     </key>
   </component>
@@ -110,6 +124,7 @@
       <workItem from="1741140646234" duration="13128000" />
       <workItem from="1741159164980" duration="6330000" />
       <workItem from="1741219599418" duration="9819000" />
+      <workItem from="1741231076515" duration="18310000" />
     </task>
     <servers />
   </component>

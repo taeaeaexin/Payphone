@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b69a48e0-68f7-4458-b9ac-c7afe5ed0e3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/Play.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/DBManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/EventDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PayPhone2/data/PlayerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/book/AddBookDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/book/BookManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/book/CustomerOrderManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/book/EditBookDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/CustomerDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/DBManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/test1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/test2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/test3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/test4.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,35 +47,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BookManager.executor": "Run",
-    "Application.CustomerOrderManager.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.PayPhone2.executor": "Run",
-    "Application.PhoneManager.executor": "Run",
-    "Application.Play.executor": "Run",
-    "Application.RegisterUI.executor": "Run",
-    "Application.test1.executor": "Run",
-    "Application.test2.executor": "Run",
-    "Application.test3.executor": "Run",
-    "Application.test4.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive/바탕 화면/GitHub/Payphone",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BookManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CustomerOrderManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PayPhone2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PhoneManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Play.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RegisterUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test4.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OneDrive/바탕 화면/GitHub/Payphone&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\OneDrive\바탕 화면\GitHub\MiniProject1_day1\src\app" />
@@ -125,6 +109,8 @@
       <workItem from="1741159164980" duration="6330000" />
       <workItem from="1741219599418" duration="9819000" />
       <workItem from="1741231076515" duration="18310000" />
+      <workItem from="1741261200528" duration="164000" />
+      <workItem from="1741261424676" duration="427000" />
     </task>
     <servers />
   </component>

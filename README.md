@@ -3,6 +3,7 @@
 > 25.03.05 ~ 25.03.07
 
 ## 프로젝트 소개
+### Payphone  
 '휴대폰 판매 시스템'을 들었을때 문득 Maroon 5 - Payphone 이라는 노래가 떠올랐습니다.  
 이 노래를 들으며 공중전화처럼 돈을 넣고 전화를 잠시 대여해주는 서비스를 생각했습니다.
 
@@ -11,14 +12,30 @@
 2. 휴대폰 빌려주기 : 휴대폰을 대여해주고 일정 금액을 받습니다.
 
 ## 기술 스택
-| Position | stack       |
-|----------|-------------|
-| FrontEnd | Java Swing  |
-| BackEnd  | Java, MySQL |
+| 분야       | 기술               |
+|----------|-------------------|
+| FrontEnd | Java Swing        |
+| BackEnd  | Java, MySQL, JDBC |
 
 ## 시스템 아키텍처
 ![img.png](img.png)
 
 ## 기능
+
+
+---
+### Payphone game
+위 프로젝트를 진행 후 부족하다고 느껴 추가로 게임을 제작했습니다.
+
+## 기술 스택
+| 분야       | 기술               |
+|----------|-------------------|
+| FrontEnd | Java Swing        |
+| BackEnd  | Java, MySQL, JDBC |
+
+
+## 시스템 아키텍처
+![img_2.png](img_2.png)
+
 
 ![img_1.png](img_1.png)

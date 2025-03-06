@@ -1,4 +1,4 @@
-package app.book.common;
+package app.PayPhone.common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 // ResultSet, PreparedStatement, Connection 객체 종료 close()
 public class DBManager {
 
-	static String url = "jdbc:mysql://localhost:3306/madang";
+	static String url = "jdbc:mysql://localhost:3306/payphone";
 	static String user = "root";
 	static String pwd = "root";
 	

@@ -1,4 +1,4 @@
-package app.book.dao;
+package app.PayPhone.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,55 +7,43 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.book.common.DBManager;
-import app.book.dto.Book;
+import app.PayPhone.common.DBManager;
+import app.PayPhone.dto.Phone;
 
-// book table 에 대한 crud
-public class BookDao {
-
-	public int insertBook(Book book) {
+public class PhoneDao {
+	public int insertPhone(Phone phone) {
 		int ret = -1;
-		String sql = "insert into book values ( ?, ?, ?, ? ); ";
-		
+		String sql = "insert into phone values (?, ?, ?, ?);";
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		
 		try {
 			con = DBManager.getConnection();			
 			pstmt = con.prepareStatement(sql);
-			
-			pstmt.setInt(1, book.getBookId());
-			pstmt.setString(2, book.getBookName());
-			pstmt.setString(3, book.getPublisher());
-			pstmt.setInt(4, book.getPrice());
-			
+			pstmt.setInt(1, phone.getId());
+			pstmt.setString(2, phone.getModel());
+			pstmt.setString(3, phone.getCompany());
+			pstmt.setInt(4, phone.getPrice());
 			ret = pstmt.executeUpdate();
-			
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}finally {
 			DBManager.releaseConnection(pstmt, con);
 		}
-		
 		return ret;
 	}
-	
-	public int updateBook(Book book) {
+
+	public int updatePhone(Phone phone) {
 		int ret = -1;		
-		String sql = "update book set bookname = ?, publisher = ?, price = ? where bookid = ?; ";
-		
+		String sql = "update phone set model = ?, company = ?, price = ? where id = ?; ";
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		
 		try {
 			con = DBManager.getConnection();			
 			pstmt = con.prepareStatement(sql);
-
-			pstmt.setString(1, book.getBookName());
-			pstmt.setString(2, book.getPublisher());
-			pstmt.setInt(3, book.getPrice());
-			pstmt.setInt(4, book.getBookId());
-			
+			pstmt.setString(1, phone.getModel());
+			pstmt.setString(2, phone.getCompany());
+			pstmt.setInt(3, phone.getPrice());
+			pstmt.setInt(4, phone.getId());
 			ret = pstmt.executeUpdate();
 			
 		}catch(SQLException e) {
@@ -63,121 +51,97 @@ public class BookDao {
 		}finally {
 			DBManager.releaseConnection(pstmt, con);
 		}
-		
 		return ret;
 	}
 	
-	public int deleteBook(int bookId) {
+	public int deletePhone(int id) {
 		int ret = -1;
-		String sql = "delete from book where bookid = ?; ";
-		
+		String sql = "delete from phone where id = ?; ";
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		
 		try {
 			con = DBManager.getConnection();			
 			pstmt = con.prepareStatement(sql);
-
-			pstmt.setInt(1, bookId);
-			
+			pstmt.setInt(1, id);
 			ret = pstmt.executeUpdate();
-			
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}finally {
 			DBManager.releaseConnection(pstmt, con);
 		}
-		
 		return ret;
 	}
 	
-	public List<Book> listBook(){
-		List<Book> list = new ArrayList<>();
-		
-		String sql = "select * from book; ";
-		
+	public List<Phone> listPhone(){
+		List<Phone> list = new ArrayList<>();
+		String sql = "select * from phone; ";
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		
 		try {
 			con = DBManager.getConnection();			
 			pstmt = con.prepareStatement(sql);
-			
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
-				Book book = new Book();
-				book.setBookId(rs.getInt("bookid"));
-				book.setBookName(rs.getString("bookname"));
-				book.setPublisher(rs.getString("publisher"));
-				book.setPrice(rs.getInt("price"));
-				list.add(book);
+				Phone phone = new Phone();
+				phone.setId(rs.getInt("id"));
+				phone.setModel(rs.getString("model"));
+				phone.setCompany(rs.getString("company"));
+				phone.setPrice(rs.getInt("price"));
+				list.add(phone);
 			}
-			
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}finally {
 			DBManager.releaseConnection(pstmt, con);
 		}
-		
 		return list;
 	}
 	
-	public List<Book> listBook(String searchWord){
-		List<Book> list = new ArrayList<>();
-		
-		String sql = "select * from book where bookname like ?; "; // % 사용 X
-		
+	public List<Phone> listPhone(String searchWord){
+		List<Phone> list = new ArrayList<>();
+		String sql = "select * from book where model like ?; "; // % 사용 X
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		
 		try {
 			con = DBManager.getConnection();			
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, "%" + searchWord + "%");
-			
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
-				Book book = new Book();
-				book.setBookId(rs.getInt("bookid"));
-				book.setBookName(rs.getString("bookname"));
-				book.setPublisher(rs.getString("publisher"));
-				book.setPrice(rs.getInt("price"));
-				list.add(book);
+				Phone phone = new Phone();
+				phone.setId(rs.getInt("id"));
+				phone.setModel(rs.getString("model"));
+				phone.setCompany(rs.getString("company"));
+				phone.setPrice(rs.getInt("price"));
+				list.add(phone);
 			}
-			
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}finally {
 			DBManager.releaseConnection(pstmt, con);
 		}
-		
 		return list;
 	}
 	
-	public Book detailBook(int bookId) {
-		Book book = null;
-		
-		String sql = "select * from book where bookid = ?; ";
-		
+	public Phone detailPhone(int id) {
+		Phone phone = null;
+		String sql = "select * from book where id = ?; ";
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		
 		try {
 			con = DBManager.getConnection();			
 			pstmt = con.prepareStatement(sql);
-			
-			pstmt.setInt(1, bookId);
-			
+			pstmt.setInt(1, id);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
-				book = new Book();
-				book.setBookId(rs.getInt("bookid"));
-				book.setBookName(rs.getString("bookname"));
-				book.setPublisher(rs.getString("publisher"));
-				book.setPrice(rs.getInt("price"));
+				phone = new Phone();
+				phone.setId(rs.getInt("id"));
+				phone.setModel(rs.getString("model"));
+				phone.setCompany(rs.getString("company"));
+				phone.setPrice(rs.getInt("price"));
 			}
 			
 		}catch(SQLException e) {
@@ -186,7 +150,7 @@ public class BookDao {
 			DBManager.releaseConnection(pstmt, con);
 		}
 		
-		return book;
+		return phone;
 	}
 }
 

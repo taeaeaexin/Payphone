@@ -1,4 +1,4 @@
-package app.book.ui;
+package app.PayPhone.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -17,28 +17,26 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
-import app.book.dao.BookDao;
-import app.book.dto.Book;
+import app.PayPhone.dao.PhoneDao;
+import app.PayPhone.dto.Phone;
 
-public class BookManager extends JFrame { 
-
+public class PhoneManager extends JFrame {
 	private JTable table; // grid ui component
 	private DefaultTableModel tableModel;// grid data
 	private JButton searchButton, addButton, editButton, listButton;
 	private JTextField searchWordField;
 	
-	// bookDao
-	private BookDao bookDao = new BookDao();
+	private PhoneDao phoneDao = new PhoneDao();
 	
-	public BookManager() {
+	public PhoneManager() {
 		// 화면 UI 와 관련된 설정
-		setTitle("Book Manager");
+		setTitle("Phone Manager");
 		setSize(600, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		
 		// table
-		tableModel = new DefaultTableModel(new Object[] {"Book ID", "Book Name", "Publisher", "Price" }, 0) {
+		tableModel = new DefaultTableModel(new Object[] {"id", "model", "company", "price" }, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {
                 return false; // All cells are not editable
@@ -46,8 +44,7 @@ public class BookManager extends JFrame {
 		};
 		table = new JTable(tableModel);
 		
-		// DB 로부터 현재 book 테이블에 있는 데이터를 가져와서 보여준다.
-		listBook();
+		phoneDao.listPhone();
 		
 		// search
 		Dimension  textFieldSize = new Dimension(400, 28);
@@ -86,14 +83,14 @@ public class BookManager extends JFrame {
 		searchButton.addActionListener( e -> {
 			String searchWord = searchWordField.getText();
 			if( !searchWord.isBlank() ) {
-				listBook(searchWord);
+				this.listPhone(searchWord);
 			}
 		});
 		
 		
 		addButton.addActionListener( e -> {
 			// AddBookDialog 를 띄운다.
-			AddBookDialog addDialog = new AddBookDialog(this, this.tableModel);
+			AddPhoneDialog addDialog = new AddPhoneDialog(this, this.tableModel);
 			addDialog.setVisible(true);
 		}); 
 		
@@ -102,7 +99,7 @@ public class BookManager extends JFrame {
 			// table 에 선택된 row
 			int selectedRow = table.getSelectedRow();
 			if( selectedRow >= 0 ) {
-				EditBookDialog editDialog = new EditBookDialog(this, this.tableModel, selectedRow);
+				EditPhoneDialog editDialog = new EditPhoneDialog(this, this.tableModel, selectedRow);
 				editDialog.setVisible(true);
 			}else {
 				JOptionPane.showMessageDialog(this, "도서를 선택하세요.");
@@ -110,7 +107,7 @@ public class BookManager extends JFrame {
 			
 		});
 		
-		listButton.addActionListener( e -> listBook() );
+		listButton.addActionListener( e -> listPhone() );
 		
 		table.addMouseListener(new MouseAdapter() {
 			@Override
@@ -119,11 +116,10 @@ public class BookManager extends JFrame {
             	if (e.getClickCount() == 2) {
                     int selectedRow = table.getSelectedRow();
                     if (selectedRow >= 0) {
-                        EditBookDialog editDialog = new EditBookDialog(BookManager.this, tableModel, selectedRow);
+                        EditPhoneDialog editDialog = new EditPhoneDialog(PhoneManager.this, tableModel, selectedRow);
                         editDialog.setVisible(true);
                     }
             	}
-
             }
 		});
 	}
@@ -132,50 +128,50 @@ public class BookManager extends JFrame {
 		tableModel.setRowCount(0);
 	}
 	
-	private void listBook() {
+	private void listPhone() {
 		// 현재 tableModel 을 정리하고 
 		clearTable();
 		
-		List<Book> bookList = bookDao.listBook();
+		List<Phone> phoneList = phoneDao.listPhone();
 		
-		for (Book book : bookList) {
-			tableModel.addRow(new Object[] {book.getBookId(), book.getBookName(), book.getPublisher(), book.getPrice() });
+		for (Phone phone : phoneList) {
+			tableModel.addRow(new Object[] {phone.getId(), phone.getModel(), phone.getCompany(), phone.getPrice() });
 		}
 	}
 	
-	private void listBook(String searchWor) {
+	private void listPhone(String searchWor) {
 		// 현재 tableModel 을 정리하고 
 		clearTable();
 		
-		List<Book> bookList = bookDao.listBook(searchWor);
+		List<Phone> phoneList = phoneDao.listPhone(searchWor);
 		
-		for (Book book : bookList) {
-			tableModel.addRow(new Object[] {book.getBookId(), book.getBookName(), book.getPublisher(), book.getPrice() });
+		for (Phone phone : phoneList) {
+			tableModel.addRow(new Object[] {phone.getId(), phone.getModel(), phone.getCompany(), phone.getPrice() });
 		}
 	}
 	
-	Book detailBook(int bookId) {
-		return bookDao.detailBook(bookId);
+	Phone detailPhone(int bookId) {
+		return phoneDao.detailPhone(bookId);
 	}
 	
-	void insertBook(Book book) {
-		int ret = bookDao.insertBook(book);
+	void insertPhone(Phone phone) {
+		int ret = phoneDao.insertPhone(phone);
 		if( ret == 1 ) {
-			listBook();
+			listPhone();
 		}
 	}
 	
-	void updateBook(Book book) {
-		int ret = bookDao.updateBook(book);
+	void updatePhone(Phone phone) {
+		int ret = phoneDao.updatePhone(phone);
 		if( ret == 1 ) {
-			listBook();
+			listPhone();
 		}
 	}
 	
-	void deleteBook(int bookId) {
-		int ret = bookDao.deleteBook(bookId);
+	void deletePhone(int bookId) {
+		int ret = phoneDao.deletePhone(bookId);
 		if( ret == 1 ) {
-			listBook();
+			listPhone();
 		}
 	}
 	
@@ -185,7 +181,7 @@ public class BookManager extends JFrame {
 		// invokeLater( thread 객체 <- runnable interface 를 구현한 <- runnable interface 가 functional interface
 		//  결과적으로 invokeLater( lambda 식 표현 객체 )
 		SwingUtilities.invokeLater( () -> {
-			new BookManager().setVisible(true);
+			new PhoneManager().setVisible(true);
 		});
 		
 	}

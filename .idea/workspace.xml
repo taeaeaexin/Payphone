@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b69a48e0-68f7-4458-b9ac-c7afe5ed0e3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PayPhone/ui/AddPhoneDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/ui/AddPhoneDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PayPhone/ui/PhoneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PayPhone/ui/PhoneManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +113,7 @@
       <workItem from="1741231076515" duration="18310000" />
       <workItem from="1741261200528" duration="164000" />
       <workItem from="1741261424676" duration="427000" />
+      <workItem from="1741305121997" duration="1024000" />
     </task>
     <servers />
   </component>

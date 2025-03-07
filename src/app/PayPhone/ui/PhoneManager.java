@@ -54,7 +54,7 @@ public class PhoneManager extends JFrame {
 		searchButton = new JButton("검색");
 		
 		JPanel searchPanel = new JPanel();
-		searchPanel.add(new JLabel("제목 검색"));
+		searchPanel.add(new JLabel("모델 검색"));
 		searchPanel.add(searchWordField);
 		searchPanel.add(searchButton);
 		
@@ -63,17 +63,12 @@ public class PhoneManager extends JFrame {
 		editButton = new JButton("수정 & 삭제");
 		listButton = new JButton("목록");
 		
-		// button 2개를 담는 JPanel 객체를 만들고 그 객체를 BookManager 에 담는다.
 		JPanel buttonPanel = new JPanel(); // default layout : Flow Layout
 		buttonPanel.add(addButton);
 		buttonPanel.add(editButton);
 		buttonPanel.add(listButton);
 		
 
-		// table, buttonPnel 을 BookManager 에 붙인다. 
-		// BookManager 의 layout 에 따라 결정
-		
-		// BookManager 의 layout 설정 
 		setLayout(new BorderLayout());
 		add(searchPanel, BorderLayout.NORTH);
 		add(new JScrollPane(table), BorderLayout.CENTER); // table < scroll pane < jframe
@@ -89,20 +84,17 @@ public class PhoneManager extends JFrame {
 		
 		
 		addButton.addActionListener( e -> {
-			// AddBookDialog 를 띄운다.
 			AddPhoneDialog addDialog = new AddPhoneDialog(this, this.tableModel);
 			addDialog.setVisible(true);
 		}); 
 		
 		editButton.addActionListener(e -> {
-			// table 에 선택된 row 가 있으면 EditBookDialog 를 띄운다.
-			// table 에 선택된 row
 			int selectedRow = table.getSelectedRow();
 			if( selectedRow >= 0 ) {
 				EditPhoneDialog editDialog = new EditPhoneDialog(this, this.tableModel, selectedRow);
 				editDialog.setVisible(true);
 			}else {
-				JOptionPane.showMessageDialog(this, "도서를 선택하세요.");
+				JOptionPane.showMessageDialog(this, "휴대폰을 선택하세요.");
 			}
 			
 		});
@@ -150,8 +142,8 @@ public class PhoneManager extends JFrame {
 		}
 	}
 	
-	Phone detailPhone(int bookId) {
-		return phoneDao.detailPhone(bookId);
+	Phone detailPhone(int id) {
+		return phoneDao.detailPhone(id);
 	}
 	
 	void insertPhone(Phone phone) {
@@ -168,8 +160,8 @@ public class PhoneManager extends JFrame {
 		}
 	}
 	
-	void deletePhone(int bookId) {
-		int ret = phoneDao.deletePhone(bookId);
+	void deletePhone(int id) {
+		int ret = phoneDao.deletePhone(id);
 		if( ret == 1 ) {
 			listPhone();
 		}

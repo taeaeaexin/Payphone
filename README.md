@@ -45,11 +45,11 @@ Payphone1에서 Java Swing GUI를 더 활용하여 만든 게임입니다.
 ![img_3.png](img%2Fimg_3.png)
 
 ## 이미지
-![img_4.png](img%2Fimg_4.png)
-![img_5.png](img%2Fimg_5.png)
-![img_6.png](img%2Fimg_6.png)
-![img_7.png](img%2Fimg_7.png)
-![img_8.png](img%2Fimg_8.png)
+![img_4.png](img%2Fimg_4.png)  
+![img_5.png](img%2Fimg_5.png)  
+![img_6.png](img%2Fimg_6.png)  
+![img_7.png](img%2Fimg_7.png)  
+![img_8.png](img%2Fimg_8.png)  
 
 ---
 
@@ -74,7 +74,7 @@ Payphone2에서 Swing을 포기하고 데이터 모델링에 중점을 둔 프�
 ![payphon3.png](img%2Fpayphon3.png)
 
 ## 이미지
-![img_10.png](img%2Fimg_10.png)
-![img_11.png](img%2Fimg_11.png)
-![img_12.png](img%2Fimg_12.png)
-![img_13.png](img%2Fimg_13.png)
+![img_10.png](img%2Fimg_10.png)  
+![img_11.png](img%2Fimg_11.png)  
+![img_12.png](img%2Fimg_12.png)  
+![img_13.png](img%2Fimg_13.png)  

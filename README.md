@@ -16,7 +16,7 @@
 | BackEnd  | Java, MySQL, JDBC |
 
 ## 시스템 아키텍처
-![img.png](img/payphone1.png)
+![img.png](img/payphone1_ERD.png)
 
 ## 이미지
 ![img_9.png](img%2Fimg_9.png)

@@ -100,7 +100,7 @@ public class PhoneDao {
 	
 	public List<Phone> listPhone(String searchWord){
 		List<Phone> list = new ArrayList<>();
-		String sql = "select * from book where model like ?; "; // % 사용 X
+		String sql = "select * from phone where model like ?; "; // % 사용 X
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -127,7 +127,7 @@ public class PhoneDao {
 	
 	public Phone detailPhone(int id) {
 		Phone phone = null;
-		String sql = "select * from book where id = ?; ";
+		String sql = "select * from phone where id = ?; ";
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;

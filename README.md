@@ -42,7 +42,7 @@ Payphone1에서 Java Swing GUI를 더 활용하여 만든 게임입니다.
 
 
 ## 시스템 아키텍처
-![img_3.png](img%2Fimg_3.png)
+![payphone2_ERD.png](img/payphone2_ERD.png)
 
 ## 이미지
 ![img_4.png](img%2Fimg_4.png)  
@@ -71,7 +71,7 @@ Payphone2에서 Swing을 포기하고 데이터 모델링에 중점을 둔 프�
 | BackEnd  | Java, MySQL, JDBC |
 
 ## 시스템 아키텍처
-![payphon3.png](img%2Fpayphon3.png)
+![payphon3_ERD.png](img/payphon3_ERD.png)
 
 ## 이미지
 ![img_10.png](img%2Fimg_10.png)  
